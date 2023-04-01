@@ -4,7 +4,7 @@ import './App.css';
 
 class Welcome extends React.Component {
   render() {
-    return <h1>This website is sus</h1>;
+    return <h1>This website is awesome!</h1>;
   }
 }
 
