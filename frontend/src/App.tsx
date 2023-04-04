@@ -1,18 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-class Welcome extends React.Component {
-  render() {
-    return <h1>This website is awesome!</h1>;
-  }
-}
+import Home from './pages/Home';
+import MovieList from './pages/Movies';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Podcast from './pages/Podcasts';
+//import NoPage from './pages/NoPage';
 
 function App() {
   return (
-    <div>
-      <Welcome />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="Podcasts" element={<Podcast />} />
+          <Route path="Movies" element={<MovieList />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
