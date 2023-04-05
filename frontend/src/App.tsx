@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import MovieList from './pages/Movies';
@@ -10,16 +9,18 @@ import Podcast from './pages/Podcasts';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="Home" element={<Home />} />
-          <Route path="Podcasts" element={<Podcast />} />
-          <Route path="Movies" element={<MovieList />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Podcasts" element={<Podcast />} />
+            <Route path="Movies" element={<MovieList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
