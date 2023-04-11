@@ -1,11 +1,20 @@
-//import React, { useState } from 'react';
-import data from '../MovieData.json';
+import { useEffect, useState } from 'react';
+import { Movie } from '../movies/movie';
 <link rel="stylesheet" type="text/css" href="index.css" />;
 
-const md = data.MovieData;
+//const md = data.MovieData;
 
 function MovieList() {
-  //const [listofmovies, setlistofmovies] = useState(md);
+  const [listofmovies, setListofMovies] = useState<Movie[]>([]);
+
+  useEffect(() => {
+    const fetchMovie = async () => {
+      const rsp = await fetch('https://localhost:4000/movie');
+      const temp = await rsp.json();
+      setListofMovies(temp);
+    };
+    fetchMovie();
+  }, []);
 
   return (
     <>
@@ -30,7 +39,7 @@ function MovieList() {
               </tr>
             </thead>
             <tbody>
-              {md.map((m) => (
+              {listofmovies.map((m) => (
                 <tr>
                   <td>{m.Title}</td>
                   <td>{m.Year}</td>

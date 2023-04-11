@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/APIfor14.props" />
+</Project>

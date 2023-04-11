@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{1223E5F7-DA55-423A-B8DD-3760926BEC02}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="APIfor14/Data/MovieData.cs">
+    <Files>
+      <File FileName="APIfor14/Controllers/WeatherForecastController.cs" />
+      <File FileName="APIfor14/Data/MovieData.cs" Line="16" Column="3" />
+      <File FileName="APIfor14/appsettings.json" Line="11" Column="4" />
+      <File FileName="APIfor14/Program.cs" Line="4" Column="1" />
+      <File FileName="APIfor14/Data/MovieDbContext.cs" Line="13" Column="1" />
+      <File FileName="APIfor14/appsettings.json~" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="APIfor14" expanded="True">
+            <Node name="APIfor14" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="MovieData.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.APIfor14 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
