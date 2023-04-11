@@ -24,8 +24,8 @@ namespace APIfor14.Controllers
         public IEnumerable<MovieData> Get()
         {
             var x = context.Movies.ToArray();
-            return context.Movies.ToArray();
+            return context.Movies.ToArray().Where(m => m.Edited == "Yes");
         }
     }
-}
+} 
 
